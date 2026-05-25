@@ -110,6 +110,6 @@ def delete_task(
         .first()
     )
     if not db_task:
-        raise HTTPException(status_code=404, detail="Tarefa não encontrada")
+        raise HTTPException(status_code=404, detail="Tarefa não encontrada!!!!")
     db.delete(db_task)
     db.commit()
